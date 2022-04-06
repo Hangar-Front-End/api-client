@@ -2,7 +2,7 @@
   "name": "@hangar/api-client",
   "version": "2022.0.0",
   "description": "Hangar Api Client",
-  "main": "lib/index.js",
+  "main": "lib/index.cjs.js",
   "module": "lib/index.esm.js",
   "devDependencies": {
     "@babel/core": "^7.17.8",
