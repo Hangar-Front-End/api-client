@@ -1,6 +1,6 @@
 {
   "name": "@hangar/api-client",
-  "version": "2022.0.0",
+  "version": "2022.0.1",
   "description": "Hangar Api Client",
   "main": "lib/index.cjs.js",
   "module": "lib/index.esm.js",
@@ -13,6 +13,7 @@
     "@rollup/plugin-typescript": "^8.3.1",
     "@types/jest": "^27.4.1",
     "@types/qs": "^6.9.7",
+    "@types/store": "^2.0.2",
     "@typescript-eslint/eslint-plugin": "^5.17.0",
     "@typescript-eslint/parser": "5.0.0",
     "eslint": "^8.12.0",
@@ -43,6 +44,7 @@
   "homepage": "https://github.com/Hangar-Front-End/api-client#readme",
   "dependencies": {
     "axios": "^0.26.1",
-    "qs": "^6.10.3"
+    "qs": "^6.10.3",
+    "store": "^2.0.12"
   }
 }

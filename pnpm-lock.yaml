@@ -9,6 +9,7 @@ specifiers:
   '@rollup/plugin-typescript': ^8.3.1
   '@types/jest': ^27.4.1
   '@types/qs': ^6.9.7
+  '@types/store': ^2.0.2
   '@typescript-eslint/eslint-plugin': ^5.17.0
   '@typescript-eslint/parser': 5.0.0
   axios: ^0.26.1
@@ -21,12 +22,14 @@ specifiers:
   prettier: ^2.6.1
   qs: ^6.10.3
   rollup: ^2.70.1
+  store: ^2.0.12
   tslib: '*'
   typescript: ^4.6.3
 
 dependencies:
   axios: 0.26.1
   qs: 6.10.3
+  store: 2.0.12
 
 devDependencies:
   '@babel/core': 7.17.8
@@ -37,6 +40,7 @@ devDependencies:
   '@rollup/plugin-typescript': 8.3.1_8fb0118e9d69f3600cbb8f144f7d456c
   '@types/jest': 27.4.1
   '@types/qs': 6.9.7
+  '@types/store': 2.0.2
   '@typescript-eslint/eslint-plugin': 5.17.0_735792df5d5a2f5ed11fbb495d29cb01
   '@typescript-eslint/parser': 5.0.0_eslint@8.12.0+typescript@4.6.3
   eslint: 8.12.0
@@ -1690,6 +1694,10 @@ packages:
 
   /@types/stack-utils/2.0.1:
     resolution: {integrity: sha512-Hl219/BT5fLAaz6NDkSuhzasy49dwQS/DSdu4MdggFB8zcXv7vflBI3xp7FEmkmdDkBUI2bPUNeMttp2knYdxw==}
+    dev: true
+
+  /@types/store/2.0.2:
+    resolution: {integrity: sha512-ZPHnXkzmGMfk+pHqAGzTSpA9CbsHmJLgkvOl5w52LZ0XTxB1ZIHWZzQ7lEtjTNWScBbsQekg8TjApMXkMe4nkw==}
     dev: true
 
   /@types/yargs-parser/21.0.0:
@@ -4246,6 +4254,10 @@ packages:
     dependencies:
       escape-string-regexp: 2.0.0
     dev: true
+
+  /store/2.0.12:
+    resolution: {integrity: sha1-jFNOKguDH3K3X8XxEZhXxE711ZM=}
+    dev: false
 
   /string-length/4.0.2:
     resolution: {integrity: sha512-+l6rNN5fYHNhZZy41RXsYptCjA2Igmq4EG7kZAYFQI1E1VTXarr6ZPXBg6eq7Y6eK4FEhY6AJlyuFIb/v/S0VQ==}

@@ -1,13 +1,22 @@
 import { default as AxiosFactory } from "axios";
 import { AxiosClient } from "../types";
 import { AxiosInstance } from "axios";
+import storage from "store";
+import { DEFAULT_TOKEN_KEY } from "./Constant";
 import qs from "qs";
 
 export class DefaultAxiosClient implements AxiosClient {
   private readonly axios: AxiosInstance;
 
-  constructor(axios?: AxiosInstance) {
+  constructor(axios?: AxiosInstance, tokenKey?: string) {
     this.axios = axios || AxiosFactory.create();
+    this.axios.interceptors.request.use((config) => {
+      const token = storage.get(tokenKey || DEFAULT_TOKEN_KEY);
+      if (token) {
+        config.headers = Object.assign(config.headers || {}, { Authorization: `Bearer ${token}` });
+      }
+      return config;
+    });
   }
 
   public get(url: string, data?: object, config?: object) {
